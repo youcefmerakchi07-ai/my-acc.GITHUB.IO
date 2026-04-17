@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youcef Merakchi | Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* خلفية متحركة احترافية */
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            overflow: hidden;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px); /* تأثير الزجاج الضبابي */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: #f0f0f0;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        /* تأثيرات التحويم لكل أيقونة */
+        .discord:hover { color: #5865F2; background: white; transform: translateY(-10px); }
+        .instagram:hover { color: #E1306C; background: white; transform: translateY(-10px); }
+        .tiktok:hover { color: #000000; background: white; transform: translateY(-10px); }
+
+        /* إضافة لمعان خفيف */
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255,255,255,0.05);
+            transform: rotate(45deg);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Youcef Merakchi</h1>
+        <p>مرحباً بك في عالمي الخاص</p>
+        
+        <div class="social-icons">
+            <a href="#" class="discord" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="#" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="tiktok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>
